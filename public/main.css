@@ -1,0 +1,174 @@
+/* 초기화 */
+* {
+  margin : 0; padding : 0;
+  font-family : sans-serif , serif;
+}
+
+a {
+  text-decoration : none;
+}
+
+li {
+  list-style : none;
+}
+/************************************/
+/*내비 블록 정렬*/
+.pull_left{
+  float : left;
+}
+
+.pull_right
+{
+  float : right;
+}
+/************************************/
+/*페이지 전체 틀 구성*/
+body {/*페이지 밖 영역*/
+  width : 960px;  margin : 0 auto;
+  /* background-color : #e6e6e6; */
+  /* background-image : url('study_c_background.jpg'); */
+}
+
+#page_wrapper{/*페이지 안 영역*/
+  /* background-image : url('main_background.png'); */
+  background-color : rgba(201,201,201,1);
+  background-size : 100% 100%;
+  margin : 40px 0;
+  padding : 10px 20px;
+  border-radius : 5px;
+  /* box-shadow : 0 2px 6px rgba(100,100,100,0.3); */
+}
+/************************************/
+/*헤더 구성하기*/
+#main_header {
+  padding : 40px 50px 20px 50px;
+  background-color : rgba(255,255,255,0.3);
+}
+
+.master_title {
+  font-size : 30px;
+  margin-bottom : 10px;
+  text-align : center;
+}
+
+.master_title a {
+  color : rgba(0,0,0,1);
+}
+
+.master_description {
+  font-size : 15px;
+  font-weight : 500;/*조금 얇게*/
+  color : #383838;/*조금 연하게*/
+  text-align : right;
+}
+/************************************/
+/*네비 구성하기*/
+#main_navigation {
+  border-top : 1px solid #ff0000;/*블록에 구분선 선긋기*/
+  border-bottom : 1px solid #ff0000;/*블록에 구분선 선긋기*/
+  margin : 0 0 20px 0;
+  height : 40px;
+}
+
+.outer_menu_item {/*왼쪽 메뉴 정렬 및 포지션 하기*/
+  float : left;
+  position : relative;
+  height : 30px; line-height : 30px;
+  text-align : center;
+  padding : 5px 20px;
+}
+
+.outer_menu_item a {/*왼쪽 메뉴 정렬 및 포지션 하기*/
+  color : rgba(0,0,0,0.4);
+  font-size : 20px;
+  font-weight : bold;
+}
+
+.outer_menu_item:hover {/*왼쪽 메뉴 호버링 --> 이거 없어두 됨*/
+  height : 30px; line-height : 30px;
+  text-align : center;
+  padding : 5px 20px;
+}
+
+.outer_menu_item a:hover {/*왼쪽 메뉴 호버링*/
+  color : black;
+  font-weight: bold;
+}
+/************************************/
+/*로그인 및 로그아웃 버튼 양식 구성*/
+.login_bar {
+  height : 26px;
+  padding : 7px;
+}
+
+.input_login_button {
+  text-align : center;
+  color: black;
+  display : block;
+  float : left;
+  width : 200px;
+  height : 26px;
+  border-radius : 10px;
+  border : 1px solid #2cd116;
+  background-color: #1eff00;
+  
+  /* margin-left : -1px;텍스트 상자 영역의 그림자 영역까지만 덮어쓴다 */
+  /* vertical-align: top;
+  display : inline-block; */
+}
+
+.self_profile_text {
+  display: inline-block;
+}
+
+.input_logout_button {
+  text-align : center;
+  color: black;
+  display : block;
+  float : right;
+  width : 80px;
+  height : 26px;
+  border-radius : 10px;
+  border : 1px solid #2cd116;
+  background-color: #1eff00;
+}
+/************************************/
+/*본문 구성하기(틀)*/
+/*body태그의 너비 : 960px #page_wrapper 태그의 padding 속성으로 너비는 960-20-20==920px*/
+#content {
+  overflow : hidden;
+  background-color : rgba(255,255,255,1);
+}
+
+#main_section {
+  float : left;
+  width : 910px;
+}
+/************************************/
+/*본문 구성하기(포스트 상단)*/
+#article {
+  padding : 0 10px 20px 10px;
+  border-bottom : 1px solid #c8c8c8;
+}
+
+.article_header {/*본문 제목, 날짜*/
+  padding : 20px 0;
+}
+
+.article_title {/*본문 제목*/
+  font-size : 25px;
+  font-weight : bold;
+  font-family : serif;
+  padding-bottom : 10px;
+  text-align : center;
+}
+
+.article_date {/*본문 날짜*/
+  font-size : 13px;
+  text-align : right;
+}
+
+.article_body {/*본문 내용*/
+  font-size : 14px;
+  text-align : center;
+}

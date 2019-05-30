@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+html
+    head
+        meta(charset="UTF-8")
+        title 홈 화면
+        link(rel='stylesheet', href='/stylesheets/main.css')
+    body
+        #page_wrapper
+            #main_header
+                #hgroup
+                    h1.master_title
+                        a(href='/') nodejs team project!
+                    h2.master_description 2WDJ - 7조
+            #main_navigation
+                .pull_left
+                    ul.outer_menu
+                        l1.outer_menu_item
+                            a(href="/menu1") 조원소개
+                        l1.outer_menu_item
+                            a(href="/menu2") 현지학기제
+                        l1.outer_menu_item
+                            a(href="/menu3") 질의응답
+                .pull_right
+                    .login_bar
+                        if true
+                            a.input_login_button(href="login") 로그인
+                        else
+                            p.self_profile_text 아무개씨 안녕하세요~
+                            a.input_logout_button(href="#") 로그아웃
+            block content
+
+            #main_footer
+                a(href="https://www.yju.ac.kr/kr/index.do") 영진전문대학교
+                        
