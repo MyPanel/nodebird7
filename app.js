@@ -1,6 +1,5 @@
 // test
 const express = require('express');
-//test ddd
 const cookieParser = require('cookie-parser');
 const morgan = require('morgan');
 const path = require('path');
