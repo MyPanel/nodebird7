@@ -1,14 +1,21 @@
 {
-  "name": "nodebird",
-  "version": "0.0.1",
-  "description": "\"익스프레스로 만드는 SNS\"",
+  "name": "first_project",
+  "version": "1.0.0",
+  "description": "첫 팀프로젝트 (게시판)",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon app"
   },
-  "author": "Team7",
+  "keywords": [
+    "login",
+    "passport",
+    "upload",
+    "sequelize"
+  ],
+  "author": "Min Jung Kim",
   "license": "MIT",
   "dependencies": {
+    "bcrypt": "^3.0.6",
     "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.4",
     "dotenv": "^8.0.0",
@@ -16,7 +23,12 @@
     "express-session": "^1.16.1",
     "morgan": "^1.9.1",
     "mysql2": "^1.6.5",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
     "pug": "^2.0.3",
     "sequelize": "^5.8.7"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
   }
 }

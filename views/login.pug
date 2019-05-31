@@ -2,25 +2,18 @@
 html(lang="en")
     head
         meta(charset="UTF-8")
-        title 로그인
+        link(rel='stylesheet', href='/main.css')
+        title= title
     body
-        from
-            fieldset
-                legend 로그인박스
-                table
-                    tr
-                        td
-                            label(for="userId") 아이디
-                        td
-                            input#userId(type="text" placeholder="아이디")
-                    tr
-                        td
-                            label(for="password") 비밀번호
-                        td
-                            input#password(type="password" placeholder="비밀번호")
-                    tr
-                        td(colspan="2")
-                            input#input_login(type="submit" value="로그인")
-                    tr
-                        td(colspan="2")
-                            a#input_join(href="#") 회원가입
+        .container
+            .login_wrap
+                form(action="/auth/login", method="post")
+                    .input-group
+                        label(for='userId') ID
+                        input#email(type='text' name='userId' required autofocus)
+                    .input-group
+                        label(for='password') 비밀번호
+                        input#password(type='password' name='password' required)
+                    .error_message= loginError
+                    a#join.btn(href='/join') 회원가입
+                    button#login.btn(type='submit') 로그인

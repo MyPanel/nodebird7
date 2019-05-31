@@ -172,3 +172,8 @@ body {/*페이지 밖 영역*/
   font-size : 14px;
   text-align : center;
 }
+
+.error_message {
+  color: red;
+  font-size: 15px;
+}
